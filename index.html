@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Kumar Singh | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text-main: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--light); color: var(--text-main); line-height: 1.6; scroll-behavior: smooth; }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 20px; }
+
+        /* Social Icons */
+        .social-links { display: flex; justify-content: center; gap: 25px; margin-top: 15px; }
+        .social-links a { color: white; font-size: 2rem; transition: 0.3s; text-decoration: none; }
+        .social-links a:hover { color: var(--primary); transform: translateY(-3px); }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        nav a { text-decoration: none; color: var(--text-main); margin: 0 20px; font-weight: 600; font-size: 0.9rem; }
+        nav a:hover { color: var(--primary); }
+
+        /* Content Sections */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .section { margin-bottom: 40px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        h2 { font-size: 1.6rem; margin-bottom: 20px; color: var(--dark); border-left: 5px solid var(--primary); padding-left: 15px; }
+
+        /* Skills Tags */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-badge { background: #eff6ff; color: var(--primary); padding: 8px 16px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; border: 1px solid #dbeafe; }
+
+        /* Projects Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; transition: 0.3s; }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .card h3 { color: var(--primary); margin-bottom: 10px; }
+
+        footer { text-align: center; padding: 40px; background: var(--dark); color: white; margin-top: 50px; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav { flex-wrap: wrap; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Photo.jpg" alt="Vishal Kumar Singh" class="profile-img">
+    <h1>Vishal Kumar Singh</h1>
+    <p>MCA Graduate | Software Developer | IT Professional</p>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/vishal-kumar-singh-530404216" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+</nav>
+
+<div class="container">
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>MCA candidate (2025) with a B.Sc. in IT[cite: 1, 2]. I have a solid foundation in programming and 2 years of experience as a Laboratory Technician at Al-Karim University[cite: 1, 3]. I am passionate about software development and eager to contribute to innovative IT teams.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">SQL / MySQL / SQLite</span>
+            <span class="skill-badge">HTML5 / CSS3 / JavaScript</span>
+            <span class="skill-badge">Git & GitHub</span>
+            <span class="skill-badge">MS Excel (VBA)</span>
+            <span class="skill-badge">Troubleshooting</span>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Key Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Student Management System</h3>
+                <p>Python aur SQLite ka use karke CRUD application banayi gayi hai jo student data handle karti hai[cite: 1].</p>
+            </div>
+            <div class="card">
+                <h3>Hospital Inventory Tracker</h3>
+                <p>Excel-based system jo macros aur pivot tables se consumables monitor karta hai[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education & Experience</h2>
+        <p><strong>MCA</strong> - Lovely Professional University (GPA: 67.40%) [cite: 1, 2]</p>
+        <p><strong>B.Sc. IT</strong> - T.M. University (GPA: 76.25%) [cite: 1]</p>
+        <p><strong>Lab Technician</strong> - School of Pharmacy, Al-Karim University [cite: 1, 3]</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Vishal Kumar Singh | Professional Portfolio</p>
+</footer>
+
+</body>
+</html>
